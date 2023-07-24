@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+:root{
+  /* colors */
+
+   /* Neutral color */
+
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+ 
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--Light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  background-color: var(--White);
+  border-radius: 10px 10px 100px 10px;
+  width: 500px;
+  height: 400px; 
+  padding: 15px 30px;
+}
+
+
+label {
+  font-size: 8px;
+  color: gray;
+  font-weight: 700;
+  height: 15px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #D3D3D3;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  color  :#D3D3D3;
+  padding-left: 10px;
+}
+
+.arrow{
+  width: 100%;
+  border-top: 1px solid #D3D3D3;
+  position: relative;
+  top: 90px;
+}
+
+.imgArrow{
+  background-color: #854DFF;
+  width: 50px;
+  padding: 12px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 25px;
+  left: 90%;
+  cursor: pointer;
+}
+.imgArrow:hover{
+  background-color: var(--Off-black);
+}
+
+.output-div{
+  position: relative;
+  top: 70px;
+}
+.output-text{
+  color: var(--Off-black);
+  font-size: 52px;
+  height: 70px;
+}
+
+.output-text span {
+  color: #854DFF;
+  padding-right: 6px;
+}
+
+
+.error{
+  color: var(--Light-red);
+  font-size: 8px;
+  margin: 5px 0px;
+  height: 15px;
+
+}
+
+#year, #month, #day{
+  font-size: 12px;
+
+}
+
+@media only screen and (min-width:320px) and (max-width: 375px) {
+  .container{
+    background-color: var(--White);
+    border-radius: 10px 10px 100px 10px;
+    width: 280px;
+    max-width: 375px;
+    height: 400px; 
+    padding: 15px 20px;
+
+  }
+  
+  
+  label {
+    font-size: 8px;
+    color: gray;
+    font-weight: 700;
+    height: 15px;
+  }
+  form{
+    width:275px;
+  }
+  input {
+    border-radius: 5px;
+    border: 1px solid #D3D3D3;
+    width: 70px;
+    height: 40px;
+    outline: none;
+    color  :#D3D3D3;
+    padding-left: 10px;
+  }
+  
+  .arrow{
+    width: 100%;
+    border-top: 1px solid #D3D3D3;
+    position: relative;
+    top: 110px;
+  }
+  
+  .imgArrow{
+    background-color: #854DFF;
+    width: 50px;
+    padding: 12px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 25px;
+    left: 40%;
+    cursor: pointer;
+  }
+  .imgArrow:hover{
+    background-color: var(--Off-black);
+  }
+  
+  .output-div{
+    position: relative;
+    top: 90px;
+  }
+  .output-text{
+    color: var(--Off-black);
+    font-size: 40px;
+    height: 70px;
+  }
+  
+  .output-text span {
+    color: #854DFF;
+    padding-right: 6px;
+    font-size: 32px;
+  }
+  
+  
+  .error{
+    color: var(--Light-red);
+    font-size: 6px;
+    margin: 5px 0px;
+    height: 15px;
+  
+  }
+  
+  #year, #month, #day{
+    font-size: 12px;
+  
+  }
+}
